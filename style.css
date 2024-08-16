@@ -1,0 +1,266 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+section.home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(computer.webp);
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  font-family: sans-serif;
+}
+section.home .header {
+  padding-top: 5px;
+  margin-left: 98.5%;
+  font-size: 20px;
+}
+section.home .home-main {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+section.home .home-main h1 {
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 900;
+}
+section.home .home-main p {
+  width: 50%;
+  margin: 20px 0;
+}
+section.home .home-main button {
+  background-color: red;
+  color: white;
+  font-size: 17px;
+  text-transform: capitalize;
+  padding: 7px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+section.home .home-main button i {
+  color: black;
+}
+
+section.awesome {
+  background-color: white;
+  padding: 30px 50px;
+  font-family: sans-serif;
+}
+section.awesome .text {
+  text-align: center;
+}
+section.awesome .text h1 {
+  color: red;
+  text-transform: capitalize;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 900;
+}
+section.awesome .text p {
+  width: 50%;
+  margin: 0 auto;
+  font-weight: bold;
+}
+section.awesome .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin: 30px 0 20px 0;
+}
+section.awesome .cards .card {
+  height: 150px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+section.awesome .cards .card .circle {
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.awesome .cards .card .circle .icons {
+  font-size: 30px;
+  color: white;
+}
+section.awesome .cards .card .body h3 {
+  text-transform: capitalize;
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+section.awesome .cards .card .body p {
+  margin: 0 auto;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+section.template {
+  background-color: black;
+  padding: 30px 170px 30px 70px;
+  font-family: sans-serif;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+section.template .left {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section.template .left h1 {
+  text-transform: capitalize;
+  font-size: 30px;
+  margin-bottom: 15px;
+  font-weight: 900;
+}
+section.template .left p {
+  width: 55%;
+}
+section.template .right {
+  width: 40%;
+  font-size: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.template .right .icon {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.template .right .icon i {
+  font-size: 90px;
+}
+
+section.responsive {
+  background-color: white;
+  padding: 30px 170px 30px 70px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+section.responsive .left {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section.responsive .left h1 {
+  text-transform: capitalize;
+  font-size: 30px;
+  margin-bottom: 15px;
+  font-weight: 900;
+}
+section.responsive .left p {
+  width: 70%;
+  font-weight: bold;
+}
+section.responsive .right {
+  width: 40%;
+  font-size: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.responsive .right .icon {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.responsive .right .icon i {
+  font-size: 90px;
+  color: white;
+}
+
+section.pricing {
+  background-color: white;
+  padding: 20px 0;
+  font-family: sans-serif;
+}
+section.pricing .text-plans {
+  text-align: center;
+}
+section.pricing .text-plans h1 {
+  color: red;
+  text-transform: capitalize;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 900;
+}
+section.pricing .text-plans p {
+  width: 50%;
+  margin: 0 auto;
+  font-weight: bold;
+}
+section.pricing .blocs {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  text-align: center;
+}
+section.pricing .blocs .bloc {
+  width: 15%;
+  border: 2px solid rgb(184, 180, 180);
+}
+section.pricing .blocs .bloc .footer {
+  border-bottom: 2px solid rgb(184, 180, 180);
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+section.pricing .blocs .bloc .body {
+  margin: 15px 0;
+}
+section.pricing .blocs .bloc .body .h1 {
+  display: flex;
+  justify-content: center;
+}
+section.pricing .blocs .bloc .body .h1 h3 {
+  font-size: 20px;
+  color: red;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+section.pricing .blocs .bloc .body .h1 .p {
+  display: flex;
+}
+section.pricing .blocs .bloc .body .h1 .p p {
+  margin-top: 7px;
+}
+section.pricing .blocs .bloc .body button {
+  background-color: red;
+  padding: 7px 50px;
+  color: white;
+  border: 1px solid red;
+  border-radius: 5px;
+  text-transform: capitalize;
+}/*# sourceMappingURL=style.css.map */

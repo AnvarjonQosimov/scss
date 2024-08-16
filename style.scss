@@ -1,0 +1,319 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+$r: red;
+$w: white;
+$sp: 30px;
+$s: 90px;
+$ttr: capitalize;
+$b: black;
+$rgb:rgb(243, 240, 240);
+
+section.home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(computer.webp);
+    color: $w;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 50vh;
+    font-family: sans-serif;
+
+    .header {
+        padding-top: 5px;
+        margin-left: 98.5%;
+        font-size: 20px;
+    }
+
+    .home-main {
+        padding: 100px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        h1 {
+            text-transform: $ttr;
+            font-size: $sp;
+            font-weight: 900;
+        }
+
+        p {
+            width: 50%;
+            margin: 20px 0;
+        }
+
+        button {
+            background-color: $r;
+            color: $w;
+            font-size: 17px;
+            text-transform: $ttr;
+            padding: 7px 20px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+
+            i {
+                color: $b;
+            }
+        }
+    }
+}
+
+section.awesome {
+    background-color: $w;
+    padding: $sp 50px;
+    font-family: sans-serif;
+
+    .text {
+        text-align: center;
+
+        h1 {
+            color: $r;
+            text-transform: $ttr;
+            font-size: $sp;
+            margin-bottom: 20px;
+            font-weight: 900;
+        }
+
+        p {
+            width: 50%;
+            margin: 0 auto;
+            font-weight: bold;
+        }
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+        margin: 30px 0 20px 0;
+
+        .card {
+            height: 150px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+            .circle {
+                text-align: center;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                background-color: $r;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .icons {
+                    font-size: 30px;
+                    color: $w;
+                }
+            }
+
+            .body {
+
+
+                h3 {
+                    text-transform: $ttr;
+                    color: $r;
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin: 5px 0;
+                }
+
+                p {
+                    margin: 0 auto;
+                    font-size: 13px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+
+section.template {
+    background-color: black;
+    padding: $sp 170px $sp 70px;
+    font-family: sans-serif;
+    color: $w;
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            text-transform: $ttr;
+            font-size: $sp;
+            margin-bottom: 15px;
+            font-weight: 900;
+        }
+
+        p {
+            width: 55%;
+        }
+    }
+
+    .right {
+        width: 40%;
+        font-size: $s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .icon {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: blue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            i {
+                font-size: $s;
+            }
+        }
+    }
+}
+
+section.responsive {
+    background-color: white;
+    padding: $sp 170px $sp 70px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            text-transform: $ttr;
+            font-size: $sp;
+            margin-bottom: 15px;
+            font-weight: 900;
+        }
+
+        p {
+            width: 70%;
+            font-weight: bold;
+        }
+    }
+
+    .right {
+        width: 40%;
+        font-size: $s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .icon {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            i {
+                font-size: $s;
+                color: $w;
+            }
+        }
+    }
+}
+
+
+section.pricing{
+    background-color: $w;
+    padding: 20px 0;
+    font-family: sans-serif;
+
+    .text-plans{
+        text-align: center;
+
+        h1 {
+            color: $r;
+            text-transform: $ttr;
+            font-size: $sp;
+            margin-bottom: 20px;
+            font-weight: 900;
+        }
+
+        p {
+            width: 50%;
+            margin: 0 auto;
+            font-weight: bold;
+        }
+    }
+
+    .blocs{
+        width: 90%;
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        text-align: center;
+
+        .bloc{
+            width: 15%;
+            border: 2px solid rgb(184, 180, 180);
+
+            .footer{
+                border-bottom:2px solid rgb(184, 180, 180);
+                width: 80%;
+                margin: 0 auto;
+                padding: 15px;
+                font-weight: 900;
+                text-transform: $ttr;
+            }
+
+            .body{
+                margin: 15px 0;
+                
+                .h1{
+                    display: flex;
+                    justify-content: center;
+
+                    h3{
+                        font-size: 20px;
+                        color: $r;
+                        font-weight: bold;
+                        margin-bottom: 10px;
+                    }
+
+                    .p{
+                        display: flex;
+
+                        p{
+                            margin-top: 7px;
+                        }
+                    }
+                }
+
+                button{
+                    background-color: $r;
+                    padding: 7px 50px;
+                    color: $w;
+                    border: 1px solid $r;
+                    border-radius: 5px;
+                    text-transform: $ttr;
+                }
+            }
+        }
+    }
+}
